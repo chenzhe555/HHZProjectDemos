@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "NSTimerViewController.h"
+#import "HHZGCDViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView * tableView;
@@ -34,7 +35,7 @@
 #pragma mark 数据初始化
 -(void)initialData
 {
-    self.dataArray = @[@"定时器"];
+    self.dataArray = @[@"定时器",@"GCD"];
 }
 
 #pragma mark 视图创建
@@ -85,7 +86,11 @@
             vc = [[NSTimerViewController alloc] init];
         }
             break;
-            
+        case 1:
+        {
+            vc = [[HHZGCDViewController alloc] init];
+        }
+            break;
         default:
             break;
     }

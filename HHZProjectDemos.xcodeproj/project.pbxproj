@@ -10,6 +10,8 @@
 		6E2348871F3A8DA800143054 /* NSTimer+Reference.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2348861F3A8DA800143054 /* NSTimer+Reference.m */; };
 		6E23488B1F3A97C200143054 /* NSTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2348891F3A97C200143054 /* NSTimerViewController.m */; };
 		6E23488C1F3A97C200143054 /* NSTimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E23488A1F3A97C200143054 /* NSTimerViewController.xib */; };
+		6E23A9831F3BD79400E0F2A8 /* HHZGCDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E23A9811F3BD79400E0F2A8 /* HHZGCDViewController.m */; };
+		6E23A9841F3BD79400E0F2A8 /* HHZGCDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E23A9821F3BD79400E0F2A8 /* HHZGCDViewController.xib */; };
 		744BC89F1F30019E002B87C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 744BC89E1F30019E002B87C8 /* main.m */; };
 		744BC8A21F30019E002B87C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 744BC8A11F30019E002B87C8 /* AppDelegate.m */; };
 		744BC8A51F30019E002B87C8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 744BC8A41F30019E002B87C8 /* ViewController.m */; };
@@ -27,6 +29,9 @@
 		6E2348881F3A97C200143054 /* NSTimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSTimerViewController.h; sourceTree = "<group>"; };
 		6E2348891F3A97C200143054 /* NSTimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSTimerViewController.m; sourceTree = "<group>"; };
 		6E23488A1F3A97C200143054 /* NSTimerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NSTimerViewController.xib; sourceTree = "<group>"; };
+		6E23A9801F3BD79400E0F2A8 /* HHZGCDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HHZGCDViewController.h; sourceTree = "<group>"; };
+		6E23A9811F3BD79400E0F2A8 /* HHZGCDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HHZGCDViewController.m; sourceTree = "<group>"; };
+		6E23A9821F3BD79400E0F2A8 /* HHZGCDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HHZGCDViewController.xib; sourceTree = "<group>"; };
 		744BC89A1F30019E002B87C8 /* HHZProjectDemos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HHZProjectDemos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		744BC89E1F30019E002B87C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		744BC8A01F30019E002B87C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,6 +64,16 @@
 				8D2E628224B435E373DAA67C /* Pods-HHZProjectDemos.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		6E23A97F1F3BD76C00E0F2A8 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				6E23A9801F3BD79400E0F2A8 /* HHZGCDViewController.h */,
+				6E23A9811F3BD79400E0F2A8 /* HHZGCDViewController.m */,
+				6E23A9821F3BD79400E0F2A8 /* HHZGCDViewController.xib */,
+			);
+			path = GCD;
 			sourceTree = "<group>";
 		};
 		744BC8911F30019E002B87C8 = {
@@ -107,6 +122,7 @@
 		744BC8B41F30027F002B87C8 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				6E23A97F1F3BD76C00E0F2A8 /* GCD */,
 				744BC8B51F30033A002B87C8 /* NSTimer */,
 			);
 			path = classes;
@@ -194,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				744BC8AD1F30019E002B87C8 /* LaunchScreen.storyboard in Resources */,
+				6E23A9841F3BD79400E0F2A8 /* HHZGCDViewController.xib in Resources */,
 				744BC8AA1F30019E002B87C8 /* Assets.xcassets in Resources */,
 				744BC8A81F30019E002B87C8 /* Main.storyboard in Resources */,
 				6E23488C1F3A97C200143054 /* NSTimerViewController.xib in Resources */,
@@ -259,6 +276,7 @@
 				744BC8A51F30019E002B87C8 /* ViewController.m in Sources */,
 				744BC8A21F30019E002B87C8 /* AppDelegate.m in Sources */,
 				6E23488B1F3A97C200143054 /* NSTimerViewController.m in Sources */,
+				6E23A9831F3BD79400E0F2A8 /* HHZGCDViewController.m in Sources */,
 				744BC89F1F30019E002B87C8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

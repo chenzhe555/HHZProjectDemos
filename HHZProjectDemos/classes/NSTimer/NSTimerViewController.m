@@ -15,6 +15,7 @@
 @property (nonatomic, strong) dispatch_source_t gcdTimer;
 
 @property (nonatomic, copy) NSString * testString;
+
 @end
 
 @implementation NSTimerViewController
