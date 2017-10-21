@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "NSTimerViewController.h"
 #import "HHZGCDViewController.h"
+#import "HHZMethodSignViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView * tableView;
@@ -35,7 +36,7 @@
 #pragma mark 数据初始化
 -(void)initialData
 {
-    self.dataArray = @[@"定时器",@"GCD"];
+    self.dataArray = @[@"定时器",@"GCD",@"方法签名"];
 }
 
 #pragma mark 视图创建
@@ -89,6 +90,11 @@
         case 1:
         {
             vc = [[HHZGCDViewController alloc] init];
+        }
+            break;
+        case 2:
+        {
+            vc = [[HHZMethodSignViewController alloc] initWithNibName:@"HHZMethodSignViewController" bundle:nil];
         }
             break;
         default:
